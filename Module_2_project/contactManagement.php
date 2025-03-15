@@ -3,30 +3,33 @@
 // Contact Management Terminal-Based App
 $contacts = [];
 
-/**
- * Function to add a contact
- */
+
+
+
+//Function to add a contact
 function addContact(array &$contacts, string $name, string $email, string $phone): void
 {
     $contacts[] = ['name' => $name, 'email' => $email, 'phone' => $phone];
     echo "$name added to contacts.\n";
 }
 
-/**
- * Function to display all contacts
- */
+
+
+//Function to display all contacts
 function displayContacts(array $contacts): void
 {
     if (empty($contacts)) {
         echo "No contacts available.\n";
     } 
-    else
-    {
+    else 
         foreach ($contacts as $contact) {
             echo "Name: {$contact['name']}, Email: {$contact['email']}, Phone: {$contact['phone']}\n";
         }
-    }
+    
 }
+
+
+
 
 // Terminal-based menu loop
 while (true) {
