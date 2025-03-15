@@ -1,6 +1,6 @@
 <?php
 
-// Function to evaluate the quiz and return the score
+//Function to evaluate the quiz
 function evaluateQuiz(array $questions, array $answers): int
 {
     $score = 0;
@@ -12,7 +12,10 @@ function evaluateQuiz(array $questions, array $answers): int
     return $score;
 }
 
-// Define a set of quiz questions
+
+
+
+//quiz questions
 $questions = [
     ['question' => 'What is 2 + 2?', 'correct' => '4'],
     ['question' => 'What is the capital of France?', 'correct' => 'Paris'],
@@ -24,7 +27,10 @@ $questions = [
     ['question' => 'What is the speed of light in a vacuum (approximate km/s)?', 'correct' => '300000'],
 ];
 
-// Collect user answers
+
+
+
+//user answers
 $answers = [];
 echo "Welcome to the Ultimate Quiz!\nLet's test your knowledge. 🎉\n\n";
 
@@ -33,16 +39,25 @@ foreach ($questions as $index => $question) {
     $answers[] = trim(readline("Your answer: "));
 }
 
-// Evaluate the quiz
+
+
+
+//Evaluate quiz
 $score = evaluateQuiz($questions, $answers);
 $totalQuestions = count($questions);
 $percentage = ($score / $totalQuestions) * 100;
+
+
+
 
 // Display results
 echo "\nYou scored $score out of $totalQuestions.\n";
 echo "That's " . round($percentage, 2) . "% correct!\n";
 
-// Provide feedback based on performance
+
+
+
+//Calculate score and provide feedback
 if ($percentage == 100) {
     echo "🎉 Excellent job! You got everything right!\n";
 } elseif ($percentage >= 70) {
