@@ -47,13 +47,13 @@
 // }
 
 //indexed array
-$arr = array('php', 'js', 'css', 'html');
+//$arr = array('php', 'js', 'css', 'html');
 
 //asociative array
-$assArr = array(
-    'name' => 'Mobin',
-    'age' => 25
-);
+// $assArr = array(
+//     'name' => 'Mobin',
+//     'age' => 25
+// );
 
 // echo $assArr['name'];
 
@@ -98,7 +98,7 @@ $assArr = array(
 
 //multi separator
 // $str = "php js,go;java|python";
-$str = 'https://example.com/category/file.php';
+//$str = 'https://example.com/category/file.php';
 //$arr = preg_split('/\//',$str);
 // Array
 // (
@@ -109,8 +109,8 @@ $str = 'https://example.com/category/file.php';
 //     [4] => file.php
 // )
 
-$arr = preg_split('/\//',$str,-1,PREG_SPLIT_NO_EMPTY);
-print_r($arr);
+//$arr = preg_split('/\//',$str,-1,PREG_SPLIT_NO_EMPTY);
+//print_r($arr);
 // Array
 // (    
 //     [0] => https:
@@ -118,6 +118,15 @@ print_r($arr);
 //     [2] => category
 //     [3] => file.php
 // )
+
+
+
+
+
+
+
+
+
 
 
 
